@@ -9,7 +9,7 @@ En él vas a encontrar una presentación sobre mí, mis habilidades y algunos de
 
 ## Demo en línea
 
-https:
+https://victoriagarciabustos.netlify.app/
 
 ---
 
