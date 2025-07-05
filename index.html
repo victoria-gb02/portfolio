@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de Victoria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav_list">
+        <li><a href="#about">Inicio</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="about_container">
+      <div class="about_text">
+        <h3>¡Hola! Soy</h3>
+        <h2>Victoria García Bustos</h2>
+        <p>
+          Me estoy formando como desarrolladora front-end y este es mi portfolio personal.
+          Acá vas a encontrar los proyectos que voy creando con HTML, CSS y JavaScript,
+          combinando diseño y funcionalidad.
+        </p>
+      </div>
+      <div class="about_image">
+        <img src="./assets/perfil_foto.png" alt="Foto de Victoria" />
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills_container">
+      <div class="skill_card">
+        <img src="./assets/logo_html.png" alt="Logo HTML" />
+        <h3>HTML</h3>
+        <p>Estructuro sitios web con semántica y buenas prácticas.</p>
+      </div>
+      <div class="skill_card">
+        <img src="./assets/logo_css.png" alt="Logo CSS" />
+        <h3>CSS</h3>
+        <p>Doy estilo a las interfaces para lograr un diseño atractivo.</p>
+      </div>
+      <div class="skill_card">
+        <img src="./assets/logo_js.png" alt="Logo JavaScript" />
+        <h3>JavaScript</h3>
+        <p>Estoy aprendiendo a crear interactividad en los sitios.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote">
+    <blockquote>
+      "El futuro pertenece a quienes creen en la belleza de sus sueños."
+    </blockquote>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="projects_grid">
+      <article class="project_card">
+        <img src="./assets/proyecto1.png" alt="Proyecto 1" />
+        <h3>Portfolio</h3>
+        <a href="#" class="project_button">Ver más</a>
+      </article>
+      <article class="project_card">
+        <img src="./assets/proyecto2.png" alt="Proyecto 2" />
+        <h3>Blog</h3>
+        <a href="#" class="project_button">Ver más</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form class="contact_form">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu email" required />
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <ul class="footer_nav">
+      <li><a href="#about">Inicio</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <p class="footer_links">
+      <a href="https://github.com/victoria-gb02" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/victoria-garcia-bustos-/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>

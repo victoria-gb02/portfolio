@@ -1,0 +1,258 @@
+/* Reset y configuración general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #222222;
+  background: #f9f9f9;  
+  text-align: center;
+}
+
+
+/* Header y navegación */
+header, footer {
+  background: #f1ad74;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+  font-size: large;
+}
+
+nav a, footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_list li a:hover,
+.nav_list li a:focus {
+  color: grey;
+}
+
+/* Secciones generales */
+section {
+  padding: 2rem;
+}
+
+/* Sección About */
+#about {
+  background-color: #dde8ff;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.about_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.about_text h3 {
+  font-size: 2rem;
+  color: #a0a4d8;
+  margin-bottom: 0.5rem;
+}
+
+.about_text h2 {
+  font-size: 3rem;
+  color: #e66a44;
+  margin-bottom: 2rem;
+}
+
+.about_text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about_image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Skills */
+#skills {
+  padding: 6rem 2rem;
+  background-color: #e8eeff;
+  text-align: center;
+}
+
+.skills_container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.skill_card {
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill_card img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.skill_card h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.skill_card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.skill_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Sección Cita */
+#quote {
+  padding: 10rem 5rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+#quote blockquote {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding: 3rem 5rem;
+  line-height: 2;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Sección Proyectos */
+#projects {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project_card {
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.project_card img {
+  width: 300px;
+  object-fit: cover;
+}
+
+.project_card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.project_button {
+  background-color: #222;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.project_button:hover {
+  background-color: #ffcc00;
+  color: #222;
+}
+
+.project_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Sección Contacto */
+#contact {
+  padding: 4rem 2rem;
+  background-color: #dde8ff;
+  text-align: center;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact_form input,
+.contact_form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+.contact_form button {
+  background: #222;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.contact_form button:hover {
+  background-color: #444;
+}
+
+/* Footer */
+.footer_nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.footer_links {
+  margin-top: 1rem;
+}
